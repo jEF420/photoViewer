@@ -1,0 +1,33 @@
+.img1 {
+    float: left;
+    margin: 1%;
+}
+
+.img2 {
+    float: right;
+    margin: 1%;
+}
+
+.infobox1 {
+    background: #A8A8A8;
+    align-content: center;
+    padding: 4%;
+    margin-bottom: 1% #A8A8A8;
+    border: solid;
+}
+
+.pers {
+    padding: 3%;
+    margin: 1%;
+}
+
+.infobox2 {
+    align-content: center;
+    padding: 4%;
+    margin-bottom: 1% #A8A8A8;
+}
+
+.infobody {
+    background: #A8A8A8;
+    height: 100vh;
+}
