@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    
+}
+.infobox{
+    margin-top: 50px;
+    height: 1500px;
+    background-color: aqua;
+    width: 80%;
+    text-align: center;
+}
+button{
+    padding: 20px;
+    width: 100%;
+}
