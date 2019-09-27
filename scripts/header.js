@@ -1,5 +1,4 @@
-const body = document.querySelector("button");
-const menuBTN = document.getElementById("menu");
+/*const body = document.querySelector("button");
 
 var atag0 = document.createElement("a");
 var atag1 = document.createElement("a");
@@ -26,19 +25,29 @@ document.querySelector("header").appendChild(atag0);
 document.querySelector("header").appendChild(atag1);
 document.querySelector("header").appendChild(atag2);
 document.querySelector("header").appendChild(atag3);
-
+*/
+const menuBTN = document.getElementById("menu");
 
 menuBTN.addEventListener("mouseenter", function() {
-    hide();
+    show();
 });
 menuBTN.addEventListener("mouseleave", function() {
-    show();
+    hide();
 });
 
 function hide() {
-    document.querySelector("header").style.display = "inline-block";
+    if (!event.target.matches('#menuBtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
 }
 
 function show() {
-    document.querySelector("header").style.display = "none";
+    document.getElementById("Dropdown").classList.toggle("show");
 }
