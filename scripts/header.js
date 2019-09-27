@@ -9,8 +9,8 @@ body.insertAdjacentHTML('afterend', '<header>');
 
 atag0.href = "index.html";
 atag1.href = "viewer.html";
-atag2.href = "contact.html";
-atag3.href = "info.html";
+atag2.href = "info.html";
+atag3.href = "contact.html";
 
 var indexLink = document.createTextNode("Index");
 var photoLink = document.createTextNode("Photos")
