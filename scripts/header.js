@@ -12,7 +12,7 @@ atag1.href = "viewer.html";
 atag2.href = "info.html";
 atag3.href = "contact.html";
 
-var indexLink = document.createTextNode("Index");
+var indexLink = document.createTextNode("Home");
 var photoLink = document.createTextNode("Photos")
 var infoLink = document.createTextNode("Contact information");
 var submitLink = document.createTextNode("Submit");
