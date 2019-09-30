@@ -35,6 +35,14 @@ menuBTN.addEventListener("mouseleave", function() {
     hide();
 });
 
+<<<<<<< HEAD
+function show() {
+    document.querySelector("header").style.display = "inline-block";
+}
+
+function hide() {
+    document.querySelector("header").style.display = "none";
+=======
 function hide() {
     if (!event.target.matches('#menuBtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -50,4 +58,5 @@ function hide() {
 
 function show() {
     document.getElementById("Dropdown").classList.toggle("show");
+>>>>>>> 7c3c7f26d8bd8be81d799a94eab55e889f207e90
 }
