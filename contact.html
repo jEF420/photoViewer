@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Contact</title>
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
@@ -16,8 +21,24 @@
     <!---header-->
     <div id="menu">
         <button id="menuBtn">Menu</button>
+        <div id="Dropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="viewer.html">Photo</a>
+            <a href="info.html">Contact information</a>
+            <a href="contact.html">Submit</a>
+        </div>
     </div>
     <!----main-->
+    <form name="myform"  method="post" action="#" onsubmit="return validateemail();">  
+    <div class="conttentinput">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+        <input type="submit" value="register">  
+    </form>
     <!--------footer--------->
     <footer class="footer page-footer font-small stylish-color-dark pt-4">
         <div class="container text-center text-md-left">
@@ -28,7 +49,7 @@
                 </div>
                 <hr class="clearfix w-100 d-md-none">
                 <div class="col-md-2 mx-auto">
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">L</h5>
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4"></h5>
 
 
                 </div>

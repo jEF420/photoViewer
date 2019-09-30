@@ -1,5 +1,4 @@
-const body = document.querySelector("button");
-const menuBTN = document.getElementById("menu");
+/*const body = document.querySelector("button");
 
 var atag0 = document.createElement("a");
 var atag1 = document.createElement("a");
@@ -26,7 +25,8 @@ document.querySelector("header").appendChild(atag0);
 document.querySelector("header").appendChild(atag1);
 document.querySelector("header").appendChild(atag2);
 document.querySelector("header").appendChild(atag3);
-
+*/
+const menuBTN = document.getElementById("menu");
 
 menuBTN.addEventListener("mouseenter", function() {
     show();
@@ -35,10 +35,28 @@ menuBTN.addEventListener("mouseleave", function() {
     hide();
 });
 
+<<<<<<< HEAD
 function show() {
     document.querySelector("header").style.display = "inline-block";
 }
 
 function hide() {
     document.querySelector("header").style.display = "none";
+=======
+function hide() {
+    if (!event.target.matches('#menuBtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+function show() {
+    document.getElementById("Dropdown").classList.toggle("show");
+>>>>>>> 7c3c7f26d8bd8be81d799a94eab55e889f207e90
 }
