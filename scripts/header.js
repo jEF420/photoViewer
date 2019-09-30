@@ -29,16 +29,16 @@ document.querySelector("header").appendChild(atag3);
 
 
 menuBTN.addEventListener("mouseenter", function() {
-    hide();
-});
-menuBTN.addEventListener("mouseleave", function() {
     show();
 });
+menuBTN.addEventListener("mouseleave", function() {
+    hide();
+});
 
-function hide() {
+function show() {
     document.querySelector("header").style.display = "inline-block";
 }
 
-function show() {
+function hide() {
     document.querySelector("header").style.display = "none";
 }
