@@ -50,9 +50,10 @@ body {
 
 .infobox {
     margin-top: 50px;
-    background-color: aqua;
+    background-color: lightgrey;
     width: 80%;
     text-align: center;
+    height: 100vh;
 }
 
 form {
