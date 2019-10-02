@@ -36,21 +36,20 @@ function showDivs(n) {
 var a = document.querySelectorAll("img");
 
 
-function nameCheck(input){
- 
-     for (let i = 0; i < a.length; i++) {
-       var strng = a[i].src;
-       var n = strng.includes(input);
-       console.log(a[i].src); 
-       if (n==true){
-         document.querySelectorAll(".mySlides").style.display =  "none";
-         a[i].style.display = "block";
-         
-       }   
-       else{
-         a[i].style.display = "none"
-       }     
-     }
-     
+function nameCheck(input) {
+
+    for (let i = 0; i < a.length; i++) {
+        var strng = a[i].src;
+        var n = strng.includes(input);
+        console.log(a[i].src);
+        if (n == true) {
+
+            a[i].style.display = "block";
+            document.querySelectorAll(".mySlides").style.display = "none";
+        } else {
+            a[i].style.display = "none"
+        }
+    }
+
 
 }
