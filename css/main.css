@@ -87,3 +87,7 @@ label {
     padding-top: 1%;
     padding-bottom: 1%;
 }
+
+#demo {
+    border: #000 solid;
+}
