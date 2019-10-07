@@ -45,7 +45,6 @@ function nameCheck(input) {
         if (n == true) {
 
             a[i].style.display = "block";
-            document.querySelectorAll(".mySlides").style.display = "none";
         } else {
             a[i].style.display = "none"
         }
